@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            //1. select all <div> elements wiith class 'active' highlight them
+                $('div').filter('.active').each('highlight')
+            // 2. select the first <li> element and apply highlight style
+                $('li').first().addClass('highlight');
+            // 3. select the third <li> element (0-base index) and change its text color
+                $('li').eq(2).css('color','red');
+            
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            // 1. select input elements with name="email" and highlight them
+            $('input[name="email"]').addClass('highlight');
+
+            // 2. select all links staring with "https" and style them
+            $('a[href^="https"]').addClass('secure-link');
+
+            // 3.select input elements with a "placeholder" attribute and apply a style
+            $('input[placeholder]').addClass('placeholder-highlight');
+        });
+
+    </script>
+</body>
+</html>

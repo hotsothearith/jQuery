@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            $('#mouse-box').on('click', function () {
+                alert('Box clicked!');
+            });
+    
+            $('#mouse-box').on('dblclick', function () {
+                alert('Box double-clicked!');
+            });
+    
+            $('#mouse-box').on('mouseenter', function () {
+                $(this).addClass('highlight');
+            });
+    
+            $('#mouse-box').on('mouseleave', function () {
+                $(this).removeClass('highlight');
+            });
+    
+            $('#mouse-box').on('mousemove', function (event) {
+                console.log('Mouse Position - X: ' + event.pageX + ', Y: ' + event.pageY);
+            });
+        });
+    </script>
+    
+</body>
+</html>
